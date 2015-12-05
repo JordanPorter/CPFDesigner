@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CPF_Designer</title>
+	</head>
+	<style>
+		#basic_table{width:100%; height:100%;}
+		#basic_div{widht:10%; height:100%; background:#aaaaaa}
+		#subject_div{padding:5px; background:#bbbbbb}
+		#spacer{background:#aabbaa}
+		#month{padding:2px; background:#ccaacc; align_content:center}
+		#slot{padding:2px; background:#ccddee; background-size:100%}
+		div.outcome{padding:3px; background:#bbccaa; display:inline-block}
+	</style>
+	<script>
+		function allowDrop(ev)	{
+			ev.preventDefault();
+		}
+		function drag(ev)	{
+			ev.dataTransfer.setData("text", ev.target.id);
+		}
+		function drop(ev)	{
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData("text");
+			ev.target.appendChild(document.getElementById(data));
+		}
+	</script>
+	<body>
+		<p>Design Area and Grid</p>
+		<table id="basic_table">
+			<tr>
+				<td>
+					<div id="subject_div" ondrop="drop(event)" ondragover="allowDrop(event)">subject_div
+						<div id="outcome1" class="outcome" draggable="true" ondragstart="drag(event)">Outcome 1</div>
+						<div id="outcome2" class="outcome" draggable="true" ondragstart="drag(event)">Outcome 2</div>
+						<div id="outcome3" class="outcome" draggable="true" ondragstart="drag(event)">Outcome 3</div>
+						<div id="outcome4" class="outcome" draggable="true" ondragstart="drag(event)">Outcome 4</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<table id="basic_table">
+			<tr>
+				<td><div id="spacer" style="width=5%">spacer</div>
+				<td><div id="month">January</div></td>
+				<td><div id="month">February</div></td>
+				<td><div id="month">March</div></td>
+				<td><div id="month">April</div></td>
+				<td><div id="month">May</div></td>
+				<td><div id="month">June</div></td>
+				<td><div id="month">July</div></td>
+				<td><div id="month">August</div></td>
+				<td><div id="month">September</div></td>
+				<td><div id="month">October</div></td>
+				<td><div id="month">November</div></td>
+				<td><div id="month">December</div></td>
+			</tr>
+			<tr>
+				<td><div id="spacer" style="width=5%">subject</div>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			</tr>
+			<tr>
+				<td><div id="spacer" style="width=5%">subject</div>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			</tr>
+			<tr>
+				<td><div id="spacer" style="width=5%">subject</div>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			</tr>
+			<tr>
+				<td><div id="spacer" style="width=5%">subject</div>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			</tr>
+			<tr>
+				<td><div id="spacer" style="width=5%">subject</div>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			</tr>
+			<tr>
+				<td><div id="spacer" style="width=5%">subject</div>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			</tr>
+			<tr>
+				<td><div id="spacer" style="width=5%">subject</div>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				<td><div id="slot" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			</tr>
+		</table>
+	</body>
+</html>

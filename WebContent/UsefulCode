@@ -1,0 +1,21 @@
+For Drag And Drop:
+Script
+
+		function allowDrop(ev)	{
+			ev.preventDefault();
+		}
+		function drag(ev)	{
+			ev.dataTransfer.setData("text", ev.target.id);
+		}
+		function drop(ev)	{
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData("text");
+			ev.target.appendChild(document.getElementById(data));
+		}
+		
+Attributes
+
+		Object:
+				<div id="div3" draggable="true" ondragstart="drag(event)">OUTCOME 1.1</div>
+		Target:
+				<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
