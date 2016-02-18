@@ -32,4 +32,5 @@ body { font-family: sans-serif; }
 .draggable.is-pointer-down {
   background: #09F;
 }
+
 .draggable.is-dragging { opacity: 0.7; }
