@@ -6,10 +6,11 @@ body	{
 	background-repeat: no-repeat;
 }
 
-.square	{
-	width:150px;
-	height: 150px;
-	box-shadow: 0px 0px 20px 5px #FFFFFF;
+div.square	{
+	width: 300px;
+	height: 300px; 
+	box-shadow: 0px 0px 20px 10px #FCFCFC;
 	border-radius: 15px;
-	backgound: radial-gradient(red, green);
+	background-color: #FCFCFC;
+	opacity: 0.75;
 }
