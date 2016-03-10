@@ -17,14 +17,13 @@ div.splash_background	{
 	margin-top: 10%;
 	margin-bottom: 10%;
 	opacity: 0.75;
+	border-radius: 50px;
 }
 
 div.splash	{
+	background-color: #0066FF;
 	width: 60vh;
 	height: 60vh;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 12.5%;
-	margin-bottom: 12.5%;
-	background-color: #0066FF;
+	opacity: 1;
+	border-radius: 50px;
 }
