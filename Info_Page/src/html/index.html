@@ -2,16 +2,19 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="../css/index.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="../js/index.js"></script>
 		<meta charset="UTF-8">
 		<title>Wise Owl Info Page</title>
 	</head>
-	<body>
+	<body onload="document.body.style.opacity='1'">
 		<div class="splash_background">
 			<div class="splash">
-				<img src="../../bin/images/reading_owl_no_bkg.png" alt="">
-				<h1>WISE OWL</h1>
-				<h2>tools For teachers</h2>
+				<div class="logo">
+					<img src="../../bin/images/reading_owl_no_bkg.png" alt=""/>
+					<h1><span>WISE OWL</span></h1>
+					<h2><span>tools For teachers</span></h2>
+				</div>
+				<button id="button" onmouseover=mOver(this) onmouseout=mOut(this)>WELCOME</button>
 			</div>
 		</div>
 	</body>
