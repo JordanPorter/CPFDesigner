@@ -1,0 +1,15 @@
+{
+  "name": "outcome_creater",
+  "version": "0.0.1",
+  "description": "Allows Users To Input Outcomes In The Database",
+  "main": "outcome_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4"
+  }
+}

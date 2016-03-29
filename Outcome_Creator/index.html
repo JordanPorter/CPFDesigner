@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+
+<!--     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"> -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <script src="/apps/app.js"></script>
+    <style>
+        body { padding-top:50px; }
+    </style>
+</head>
+<body ng-app="outcome_creator">
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>OUTCOME CREATOR</h1>
+            <p>Input the information required to create an outcome and click submit.</p>
+        </div>
+		<form role="form">
+			<div class="form-group" ng-controller="outcome_controller">
+				<label for="course">Select course:</label> 
+				<select class="form-control" id="course_selector">
+					<option ng-repeat="course in courses" value="{{course.name}}">{{course.name}}</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="email">Email address:</label>
+				<input type="email" class="form-control" id="email">
+			</div>
+			<div class="form-group">
+				<label for="pwd">Password:</label>
+				<input type="password" class="form-control" id="pwd">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+    
+</body>
+</html>
