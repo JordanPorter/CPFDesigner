@@ -13,7 +13,7 @@ body	{
 div.splash_background	{
 	position: relative;
 	background-color: rgba(252, 252, 252, 0.65); /*#FCFCFC*/
-	width: 150vh;
+	width: 120vh;
 	height: 90vh;
 	margin: 2% auto 2% auto;
 	border-radius: 100px;
@@ -23,7 +23,7 @@ div.splash	{
 	background-color: rgba(252, 252, 252, 0.85); /*#0066FF*/
 	margin: 5vh;
 	position: absolute;
-	width: 140vh;
+	width: 110vh;
 	height: 80vh;
 	border-radius: 75px;
 }
@@ -47,8 +47,8 @@ div.logo h1	{
 
 div.logo h1 span	{
 	color: black;
-	font-family: "Monotype Corsiva", Verdana, sans-serif;
-	font-size: 150px;
+	font-family: SignPainter, "Monotype Corsiva", Verdana, sans-serif;
+	font-size: 300px;
 	font-weight: normal;
 	text-shadow: -3px 2px 2px rgba(0,0,0,0.5);
 }
@@ -56,14 +56,14 @@ div.logo h1 span	{
 div.logo h2	{
 	position: absolute;
 	width: 100%;
-	top: 87%;
+	top: 93%;
 	text-align: center;
 }
 
 div.logo h2 span	{
 	color: black;
-	font-family: "Monotype Corsiva", Verdana, sans-serif;
-	font-size: 35px;
+	font-family: SignPainter, "Monotype Corsiva", Verdana, sans-serif;
+	font-size: 60px;
 	font-weight: 100;
 	text-shadow: -1px 2px 15px rgba(255,255,255,0.75);
 }
@@ -80,6 +80,6 @@ div.splash #button	{
 	font-weight: 100;
 	width: 60%;
 	margin: auto;
-	top: 75%;
+	top: 85%;
 	color: white;
 }

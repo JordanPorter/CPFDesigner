@@ -20,7 +20,7 @@ div.splash_background	{
 }
 
 div.splash	{
-	background-color: rgba(0, 102, 255, 0.85); /*#0066FF*/
+	background-color: rgba(252, 252, 252, 0.85);
 	margin: 5vh;
 	position: absolute;
 	width: 140vh;
@@ -46,7 +46,7 @@ div.owl h1	{
 }
 
 div.owl h1 span	{
-	color: white;
+	color: black;
 	font-family: SignPainter, Verdana, sans-serif;
 	font-size: 150px;
 	font-weight: 100;
@@ -61,7 +61,7 @@ div.owl p	{
 }
 
 div.owl p span	{
-	color: white;
+	color: black;
 	font-family: Verdana, sans-serif;
 	font-size: 20px;
 	font-weight: 100;
@@ -100,7 +100,7 @@ div.splash form input	{
 
 div.splash form span	{
 	position: relative;
-	color: white;
+	color: black;
 	font-family: Verdana, sans-serif;
 	font-size: 20px;
 	font-weight: 100;

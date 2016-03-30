@@ -20,7 +20,7 @@ div.splash_background	{
 }
 
 div.splash	{
-	background-color: rgba(0, 102, 255, 0.85); /*#0066FF*/
+	background-color: rgba(252, 252, 252, 0.85);
 	margin: 5vh;
 	position: absolute;
 	width: 140vh;
