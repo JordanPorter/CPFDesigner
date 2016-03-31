@@ -1,1 +1,1 @@
-var app = angular.module('outcome_creator', []);
+var app = angular.module("outcome_creator", []);

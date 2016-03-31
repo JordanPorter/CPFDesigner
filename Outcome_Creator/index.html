@@ -1,27 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Index Page</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="./apps/app.js"></script>
+	<script src="./controllers/outcome_controller.js"></script>
     <style>
         body { padding-top:50px; }
     </style>
 </head>
-<body ng-app='outcome_creator'>
+<body ng-app="outcome_creator">
 
     <div class="container">
         <div class="jumbotron">
             <h1>OUTCOME CREATOR</h1>
             <p>Input the information required to create an outcome and click submit.</p>
         </div>
-		<form class="horizontal-form">
-			<div ng-controller='outcome_controller'>
-				<label>Select course:</label> 
+		<form class="horizontal-form" ng-controller="outcome_controller">
+			<div class="form-group">
+				<label>Select Course: </label> 
 				<select>
-					<option ng-repeat="course in courses" value="{{course.name}}">{{course.name}}</option>
+					<option value=""></option>
+					<option ng-repeat="course in courses" value="{{ course.name }}">{{ course.name }}</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Select Course: </label> 
+				<select>
 				</select>
 			</div>
 		</form>

@@ -1,4 +1,5 @@
 app.controller('outcome_controller', ['$scope', function($scope)	{
+	$scope.test = 'TEST',
 	$scope.courses = [
 	    {
 			name: 'Mathematics'
